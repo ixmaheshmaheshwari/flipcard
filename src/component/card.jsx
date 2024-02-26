@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactCardFlip from "react-card-flip";
 import artistsData from "./data";
-import ReactFlipCard from 'reactjs-flip-card'
 
 const CardFlip = () => {
     const [flip, setFlip] = useState(false);
@@ -48,18 +47,7 @@ const CardFlip = () => {
                 ))}
             </div>
         </ReactCardFlip>
-        // <div className="row row-cols-1 row-cols-md-3 g-4" id="rows">
-        //     {artistsData.map((artist, index) => (
-        //         <ReactFlipCard
-        //             key={index}
-        //             isFlipped={flip}
-        //             flipDirection="horizontal"
-        //             onClick={() => setFlip(!flip)}
-        //             frontComponent={ frontcard(artist)}
-        //             backComponent={backcard(artist)}
-        //         />
-        //     ))}
-        // </div>
+        
     );
 };
 
